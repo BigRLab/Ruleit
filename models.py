@@ -4,6 +4,7 @@ import aerospik
 class DataModel:
     def __init__(self, *args, **kwargs):
         self.namespace = kwargs['db_name']
+        # raw method info
         self.method_meta_set = kwargs['method_meta_set_name']
         self.client = self.create_client()
 
