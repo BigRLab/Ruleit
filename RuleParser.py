@@ -74,7 +74,6 @@ class Rule:
 
         return name_space
 
-# Ask in stack: most optimized way for pickling a AST obejct (evaluating the constants and function calls but let the methd access to be addressed dinamically)
     def create_cond_function(self, left, op, right):
         """Perform the operator on left and right side of the operation."""
         return self.operators[op](self.parser(left),
